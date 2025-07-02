@@ -68,3 +68,32 @@
     color: #707070;
     font-weight: 400;
   }
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+    .input-wrapper {
+      grid-template-columns: 1fr;
+    }
+    .output-wrapper {
+      flex-direction: column;
+    }
+    .output-wrapper div {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+    @media screen and (max-width: 280px) {
+      .container {
+        width: 100%;
+        padding: 0 1em;
+      }
+      .input-wrapper {
+        padding: 1.5em;
+      }
+      .output-wrapper div {
+        height: auto;
+        padding: 1.25em;
+      }
+      
+    }
+  }
